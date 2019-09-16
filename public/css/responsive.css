@@ -1,0 +1,146 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+@media only screen and (max-width : 1024px) and (min-width : 769px) {
+    #apply-height h3{
+        font-size: 22px;
+    }
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+}
+@media only screen and (max-width : 768px) {
+    .desktop_logo {    
+        padding: 3px 0 0;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .badge1 { max-width: 115px; margin-top: 5px;}
+    .menuzord-brand img{ width: 100%;}
+    .menuzord-brand { float: none; display: block; font-size: 36px; margin: 10px 0 0px;}
+    .menuzord-brand span { font-size: 16px; letter-spacing: 6px;}
+    .social img {
+        max-width: 40px;
+    }
+    .cart_btn { margin-top: 10px;}
+    .social {
+        padding: 45px 0 10px;
+    }    
+    .social {
+        padding: 0px 0 2px;
+        text-align: left;
+    }
+    .shipping {
+        margin: 35px 10px 0 0;
+        max-width: 160px;
+    }
+    .header-nav .header-nav-wrapper .menuzord { padding: 0 5px;}
+    img.badge2 {
+        max-width: 170px;
+        margin: 9px 0 0;
+    }
+    .card-icons{
+        text-align: center;
+    }
+    .apply-height{
+        min-height: auto;
+        padding: 5px 0;
+    }
+    .shop_box > p { 
+        min-height: auto;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .shipping_m2 {
+        display: block;
+        float: right;
+        max-width: 80px;
+        margin: 0px 0 0;
+    }
+    .apply-height { min-height: initial;}
+    .shop_box > p { min-height: initial;}
+    .header-nav .header-nav-wrapper .menuzord { padding: 0 5px}
+    .divider .container { padding-bottom: 30px; padding-top: 30px;}
+    .copyright { text-align: center;}
+    .menuzord-brand {
+        margin: 8px 0 0px;
+        float: left;
+        /*display: inline-block;*/
+        text-align: left;
+        /*max-width: 157px;*/
+    }
+    .menuzord-brand span {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    .shipping_m {
+        display: block;
+        float: right;
+        max-width: 150px;
+        margin: 16px 0 0;
+    }
+    section > .container, section > .container-fluid {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+    .header-nav .header-nav-wrapper .menuzord { margin-top: 15px;}
+    .menuzord-brand{font-size: 22px;margin: 20px 0 0;}
+    .menuzord-brand img {
+        max-width: 144px;
+    }
+    .menuzord-brand span {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    .shipping_m {
+        max-width: 86px;
+        float: right;
+        margin: 20px auto 0;
+    }
+    .shipping_m2 {
+        max-width: 72px;
+        margin: 20px auto 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 360px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 319px) {
+}

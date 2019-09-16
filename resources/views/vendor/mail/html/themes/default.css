@@ -1,0 +1,167 @@
+/* Base */
+
+body, body *:not(html):not(style):not(br):not(tr):not(code) {
+    font-family: Avenir, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}  
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing:0 !important;
+}
+
+/* What it does: Fixes Outlook.com line height. */
+.ExternalClass,
+.ExternalClass * {
+    line-height: 100%;
+}
+
+/* What it does: Fix for Yahoo mail table alignment bug. */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+
+/* What it does: Overrides blue, underlined link auto-detected by iOS Mail. */
+/* Create a class for every link style needed; this template needs only one for the link in the footer. */
+.mobile-link--footer a {
+    color: #666666 !important;
+}
+
+/* What it does: Overrides styles added images. */
+img {
+    border:0 !important;
+    outline:none !important;
+    text-decoration:none !important;
+}
+
+/* Media Queries */
+@media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+
+    /* What it does: Overrides email-container's desktop width and forces it into a 100% fluid width. */
+    .email-container {
+        width: 100% !important;
+    }
+
+    /* What it does: Forces images to resize to the width of their container. */
+    img[class="fluid"],
+    img[class="fluid-centered"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: auto !important;
+    }
+    /* And center justify these ones. */
+    img[class="fluid-centered"] {
+        margin: auto !important;
+    }
+
+    /* What it does: Forces table cells into full-width rows. */
+    td[class="stack-column"],
+    td[class="stack-column-center"] {
+        display: block !important;
+        width: 100% !important;
+        direction: ltr !important;
+    }
+    /* And center justify these ones. */
+    td[class="stack-column-center"] {
+        text-align: center !important;
+    }
+
+    /* Data Table Styles */
+    /* What it does: Hides table headers */
+    td[class="data-table-th"] {
+        display: none !important;
+    }
+    /* What it does: Change the look and layout of the remaining td's */
+    td[class="data-table-td"],
+    td[class="data-table-td-title"] {
+        display: block !important;
+        width: 100% !important;
+        border: 0 !important;
+    }
+    /* What it does: Changes the appearance of the first td in each row */
+    td[class="data-table-td-title"] {
+        font-weight: bold;
+        color: #333333;
+        padding: 10px 0 0 0 !important;
+        border-top: 2px solid #eeeeee !important;
+    }
+    /* What it does: Changes the appearance of the other td's in each row */
+    td[class="data-table-td"] {
+        padding: 5px 0 0 0 !important
+    }
+    /* What it does: Provides a visual divider between table rows. In this case, a bit of extra space. */
+    td[class="data-table-mobile-divider"] {
+        display: block !important;
+        height: 20px;
+    }
+    /* END Data Table Styles */
+
+}
+
+.button {
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-text-size-adjust: none;
+}
+.button-blue {
+    background-color: #3097D1;
+    border-top: 10px solid #3097D1;
+    border-right: 18px solid #3097D1;
+    border-bottom: 10px solid #3097D1;
+    border-left: 18px solid #3097D1;
+}
+
+.button-green {
+    background-color: #2ab27b;
+    border-top: 10px solid #2ab27b;
+    border-right: 18px solid #2ab27b;
+    border-bottom: 10px solid #2ab27b;
+    border-left: 18px solid #2ab27b;
+}
+
+.button-red {
+    background-color: #bf5329;
+    border-top: 10px solid #bf5329;
+    border-right: 18px solid #bf5329;
+    border-bottom: 10px solid #bf5329;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for PetPads.</name>
+		<atom:link rel="related" href="https://www.petpads.net" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[PetPads]]></name>
+				<address><![CDATA[1673 McDonald Ave, Brooklyn, NY, 11230, United States]]></address>
+				<phoneNumber><![CDATA[844 777 6970]]></phoneNumber>
+				<description><![CDATA[]]></description>
+				<Point>
+					<coordinates>-73.9733369,40.6122236,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>
